@@ -1,6 +1,6 @@
 import sys
 
-from PyQt.QtWidgets import QApplication,QLabel, QWidget 
+from PyQt5.QtWidgets import QApplication,QLabel, QWidget 
 
 # create an instance of QApplication
 app = QApplication([])

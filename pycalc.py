@@ -4,8 +4,8 @@
 
 import sys
 from functools import partial
-from Pyqt5.QtCore import Qt
-from PyQt5.QtWidgets import (
+from PyQt6.QtCore import Qt
+from PyQt6.QtWidgets import (
     QApplication,
     QGridLayout,
     QLineEdit,
@@ -109,6 +109,7 @@ def main():
     pycalcApp = QApplication([])
     pycalcWindow = PyCalcWindow()
     pycalcWindow.show()
+    PyCalc(model=evaluateExpression, view=pycalcWindow)
     sys.exit(pycalcApp.exec())
 
 def evaluateExpression(expression):
